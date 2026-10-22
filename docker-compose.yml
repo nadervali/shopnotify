@@ -1,0 +1,15 @@
+services:
+  notify:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - notify-data:/app/data
+    # Safe default: render the bundled example without contacting
+    # anyone. Drop --dry-run (and fill in .env) to actually send.
+    command: ["send", "--csv", "examples/customers.csv",
+              "--template", "examples/templates/order_ready.txt",
+              "--dry-run"]
+
+volumes:
+  notify-data:
