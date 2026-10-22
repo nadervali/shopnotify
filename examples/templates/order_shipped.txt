@@ -1,0 +1,2 @@
+Hi {{name}}, your order {{order_id}} ({{item}}) has been shipped and should arrive within 2-3 working days.
+Amount charged: {{amount}}. We hope you enjoy it!

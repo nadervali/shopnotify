@@ -1,0 +1,3 @@
+Hi {{name}}, good news — your order {{order_id}} ({{item}}) is ready for pickup.
+Total: {{amount}}. Just mention your name at the counter.
+Thanks for shopping with us!
